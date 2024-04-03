@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replica - CaC movies</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-colors-2019.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/726faacc44.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        background-color: #181419;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body class="w3-text-white">
+    <header class="w3-container w3-padding-16 w3-2019-chili-pepper">
+      <div id="logo" class="w3-container w3-left w3-xlarge">
+        <i class="fas fa-film"></i>
+        <span>CAC-Movies</span>
+      </div>
+      <div class="w3-container w3-right">
+        <a href="#tendencias" class="w3-btn w3-round-large">Tendencias</a>
+        <a href="" class="w3-btn w3-round-large">Registrarse</a>
+        <a href="" class="w3-button w3-round-large w3-black w3-hover-red"
+          >Iniciar Sesión</a
+        >
+      </div>
+    </header>
+    <main>
+      <section
+        style="
+          background-image: url('../img/banner-bg.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+        class="w3-card-4 w3-center"
+      >
+        <div
+          style="background-color: rgba(0, 0, 0, 0.5)"
+          class="w3-container w3-padding-32"
+        >
+          <p class="w3-jumbo" style="margin: 18px 0">
+            <b
+              >Películas y series ilimitadas <br />
+              en un solo lugar</b
+            >
+          </p>
+          <p class="w3-xxlarge" style="margin: 0">Disfrutá donde quieras.</p>
+          <p class="w3-xxlarge" style="margin: 0">
+            Cancelá en cualquier momento.
+          </p>
+          <button
+            class="w3-btn w3-round-large w3-2019-chili-pepper w3-xlarge w3-margin"
+          >
+            Registrate
+          </button>
+        </div>
+      </section>
+      <section class="w3-container">
+        <form
+          action=""
+          method="get"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <p class="w3-xxlarge"><b>Qué estas buscando para ver?</b></p>
+          <div style="margin: 0 auto 50px; width: 50%">
+            <input
+              type="text"
+              id="buscar"
+              name="buscar"
+              placeholder="Buscar.."
+              class="w3-input w3-col l10 w3-round-xxlarge w3-padding"
+            />
+            <input
+              type="submit"
+              value="Buscar"
+              class="w3-btn w3-2019-chili-pepper w3-round-xxlarge w3-border w3-right"
+            />
+          </div>
+          <hr class="w3-twothird w3-border-red" />
+        </form>
+      </section>
+      <section class="w3-center w3-xxlarge" id="tendencias">
+        <p><b>Las tendencias de hoy</b></p>
+          <div id="cards" style="display: flex; flex-direction: row; justify-content: space-around;" class="w3-container w3-margin w3-center w3-padding">
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+          </div>
+          <div id="cards" style="display: flex; flex-direction: row; justify-content: space-around;" class="w3-container w3-margin w3-center w3-padding">
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+          </div>
+          <div id="cards" style="display: flex; flex-direction: row; justify-content: space-around;" class="w3-container w3-margin w3-center w3-padding">
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+            <div class="w3-container w3-card-4">
+              <img src="../img/muchachos.jpg" alt="" class="w3-image w3-round-large">
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer
+      class="w3-container w3-padding-32 w3-center w3-2019-chili-pepper w3-large"
+      style="display: flex; justify-content: space-around; align-items: center"
+    >
+      <a href="">Términos y condiciones</a>
+      <a href="">Preguntas frecuentes</a>
+      <a href="">Ayuda</a>
+      <a href="#" class="w3-btn w3-black w3-round-large"
+        >Administrador Películas</a
+      >
+      <a href="#"
+        ><i
+          class="fas fa-arrow-circle-up w3-xxxlarge w3-text-black"
+          style="position: fixed; bottom: 20px; right: 30px; z-index: 99"
+        ></i
+      ></a>
+    </footer>
+  </body>
+</html>
